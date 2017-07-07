@@ -1,0 +1,45 @@
+/* Stretch body to center table in browser */
+html, body {
+	width: 100%;
+}
+
+#gameBoard {
+	/* Center and style game board */
+	margin: 0 auto;
+}
+
+.playSquare {
+	/* Create and style individual spaces */
+	height: 200px;
+	width: 200px;
+	border: 2px solid black;
+}
+
+.buttonDiv {
+	/* Position of div holding reset button */
+	margin-top: 15px;
+	text-align: center;
+	background-color: transparent;
+}
+
+
+
+.header {
+	/* Style and position game banner */
+	text-align: center;
+}
+
+
+
+
+
+/* Create classes to toggle when playSquare selected
+	Disable spaces in use/toggle off when board reset
+
+
+	Bonus- Create scoreboard/shift gameBoard to left of browser/add scoreboard
+	to right of gameBoard
+
+	Bonus- Create animations on each square play. Flip each td and display image
+	on reverse side? HARD MODE: Create 2 arrays of 'X' and 'O' of different font styles, 
+	create fucntion to select random image from array to display?(Math.random?) */
