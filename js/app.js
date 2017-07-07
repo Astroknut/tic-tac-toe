@@ -5,7 +5,7 @@ $(function() {
 var x = "x";
 var o = "o";
 var moves = 0;
-var o_win = 0;
+
 
 
 $('.playSquare').on('click', function() {
@@ -46,10 +46,14 @@ $('.playSquare').on('click', function() {
 	//if playSquare selected is already in use(create toggleClass for disable)	
 	} else if ($(this).hasClass('disable'))
 	{
-		alert('This space is already taken! Try again')
+		alert('This space is already taken! Try again');
 	}
 
+
+	//toggleClass to assign X or O class on playSquare
+
 	//Create reset function for button
+	
 });
 
 
