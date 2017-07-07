@@ -1,0 +1,53 @@
+List of possible ADTs
+
+-players
+
+    function Player(name, gamePiece, turn) {
+    this.name = name;
+    this.gamePiece = gamePiece;
+    this.turn = turn
+	}
+
+
+- gameBoard
+	
+		GameBoard.prototype = {
+		renderTable: function() {
+			console.log("Let's build this game board!");
+			var board = "<table></table>";
+			$('body').append(board);
+		},
+		renderRows: function() {
+			var rows = "<tr></tr><tr></tr><tr></tr>";
+			console.log("Got the rows! Lets make some squares!");
+			$('table').append(rows);
+		},
+		renderSquares: function() {
+			var squares = "<td></td><td></td><td></td>";
+			console.log("The new game board is ready to scale up!");
+			$('tr').append(squares);
+		},
+		sizeBoard: function() {
+			$('table').addClass('gameBoard');
+			$('td').addClass('playSquare');
+		}
+
+	};
+
+	function GameBoard() {
+		this.size = "3x3";
+		this.game = "tic tac toe";
+	}
+
+
+- <td>'s
+
+
+
+- reset button
+
+
+
+- scoreboard(don't have one yet)
+
+

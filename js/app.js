@@ -6,8 +6,6 @@ var x = "x";
 var o = "o";
 var moves = 0;
 
-
-
 $('.playSquare').on('click', function() {
 	console.log("IT WOOORRKKKSSS");
 	moves++;
@@ -17,6 +15,8 @@ $('.playSquare').on('click', function() {
 	} else {
 		$(this).addClass('o');
 	}
+
+
 
 	// If/else statement to check board state for winner or tie and reset board 
 	if ($("#box1").hasClass('o') && $("#box2").hasClass('o') && $("#box3").hasClass('o') 
@@ -51,13 +51,10 @@ $('.playSquare').on('click', function() {
 		//code to reset board
 
 	//if playSquare selected is already in use(create toggleClass for disable)	
-	} else if ($(this).hasClass('disable'))
-	{
+	} else if ($(this).hasClass('disable')){
 		alert('This space is already taken! Try again');
 	}
 
-
-	//toggleClass to assign X or O class on playSquare
 
 	//Create reset function for button
 	

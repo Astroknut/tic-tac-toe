@@ -3,7 +3,7 @@ html, body {
 	width: 100%;
 }
 
-#gameBoard {
+.gameBoard {
 	/* Center and style game board */
 	margin: 0 auto;
 }
