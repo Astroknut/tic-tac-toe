@@ -10,6 +10,13 @@ var moves = 0;
 
 $('.playSquare').on('click', function() {
 	console.log("IT WOOORRKKKSSS");
+	moves++;
+
+	if (moves%2 === 0) {
+		$(this).addClass('x');
+	} else {
+		$(this).addClass('o');
+	}
 
 	// If/else statement to check board state for winner or tie and reset board 
 	if ($("#box1").hasClass('o') && $("#box2").hasClass('o') && $("#box3").hasClass('o') 

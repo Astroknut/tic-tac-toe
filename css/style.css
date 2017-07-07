@@ -30,14 +30,17 @@ html, body {
 }
 
 
+
 .x {
 	/* Change playSquare to X */
-
+ 	background-image: url(../back-x-clip-art.png);
+ 	background-size: cover;
 }
 
 .o {
 	/* Change playSquare to O */
-
+	background-image: url(../O.png);
+	background-size: cover;
 }
 
 /* Create classes to toggle when playSquare selected
