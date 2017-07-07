@@ -57,7 +57,12 @@ $('.playSquare').on('click', function() {
 
 
 	//Create reset function for button
+
 	
+});
+
+$('#reset').on('click', function() {
+	location.reload();
 });
 
 
